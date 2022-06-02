@@ -89,6 +89,15 @@
   text-transform: uppercase;
 }
 
+.list-item__label {
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	width: 226px;
+	text-transform: none;
+	font-weight: 600;
+}
+
 .completed-item__list .list-item__label {
 	text-decoration: line-through;
 }
