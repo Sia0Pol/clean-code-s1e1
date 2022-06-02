@@ -96,6 +96,7 @@
 	width: 226px;
 	text-transform: none;
 	font-weight: 600;
+	border-bottom: 0px;
 }
 
 .completed-item__list .list-item__label {
