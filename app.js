@@ -14,6 +14,7 @@ var incompleteTaskHolder=document.querySelector(".todo-item__list");//ul of #inc
 var completedTasksHolder=document.querySelector(".completed-item__list");//completed-tasks
 
 
+
 //New task list item
 var createNewTaskElement=function(taskString){
 
@@ -91,7 +92,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector(".list-item__label");
     var editBtn=listItem.querySelector(".list-item__edit-btn");
-    var containsClass=listItem.classList.contains(".todo-item__list_edit list-item");
+    var containsClass=listItem.classList.contains(".todo-item__list_edit");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -105,7 +106,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("todo-item__list_edit list-item");
+    listItem.classList.toggle("todo-item__list_edit");
 };
 
 
