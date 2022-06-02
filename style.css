@@ -2,7 +2,7 @@
 .body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -78,6 +78,7 @@
 /* Heading */
 .todo-item__title, 
 .completed-item__title,
+.add-item__title,
 .list-item__label {
   color: #333;
   font-weight: 700;
@@ -86,6 +87,14 @@
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.completed-item__list .list-item__label {
+	text-decoration: line-through;
+}
+
+.completed-item__list .list-item__label {
+	color: #888;
 }
 
 .add-item__input, 
